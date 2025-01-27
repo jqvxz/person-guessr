@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Guessr</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Person Guessr</h1>
+        <p>API limits to 100 requests per day</p>
+        <p>Do not hit reload after wrong guess</p>
+        <p>Country list may be not complete</p>
+        <br>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" id="africaCheckbox" checked>
+                Africa
+            </label>
+            <label>
+                <input type="checkbox" id="asiaCheckbox">
+                Asia
+            </label>
+            <label>
+                <input type="checkbox" id="europeCheckbox">
+                Europe
+            </label>
+        </div>
+
+        <img id="personImage" src="" alt="Person Image">
+        
+        <input type="text" id="guessInput" placeholder="Enter country">
+        
+        <div class="button-group">
+            <button onclick="checkGuess()">Submit Guess</button>
+            <button onclick="newGame()">Reload</button>
+        </div>
+
+        <p id="result"></p>
+        <p>Score: <span id="score">0</span></p>
+    </div>
+</body>
+</html>
