@@ -4,7 +4,7 @@
 
 # Installation guide
 1. Clone the repo ```git clone https://github.com/jqvxz/person-guessr```
-2. Create a costume search engine at [Google Cloud](https://console.cloud.google.com/apis/api/customsearch.googleapis.com/)
+2. Create a custom search engine at [Google Cloud](https://console.cloud.google.com/apis/api/customsearch.googleapis.com/)
 3. Get an API key and insert it into the code
 
 # UI
