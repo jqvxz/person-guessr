@@ -9,5 +9,3 @@
    Youtube has some good tutorials on how to get the right key
 4. Insert the key into the js code and start open the index.html file in browser
 
-# UI
-![ui](https://github.com/user-attachments/assets/181ce985-f80d-417d-93b4-79afebba417b)
