@@ -1,0 +1,173 @@
+:root {
+    --bg-dark: #1e1e1e;
+    --text-light: #ffffff;
+    --accent-green: #006340;
+    --card-bg: #1E1E1E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.logo {
+    width: 350px;
+    -webkit-filter: invert(.75); 
+    filter: invert(.75);
+}
+
+.game-container {
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+    border: solid 2px #333;
+}
+
+.logo-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+#personImage {
+    max-width: 300px;
+    border: solid 2px #333;
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: var(--card-bg);
+    border: solid 2px #333;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.switch-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.switch-label input[type="checkbox"] {
+    appearance: none;
+    width: 40px;
+    height: 20px;
+    background-color: #5e5d5d;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.switch-label input[type="checkbox"]:checked {
+    background-color: #006340;
+}
+
+.switch-label input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    background-color: #1e1e1e;
+    transition: transform 0.3s;
+}
+
+.switch-label input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
+
+#guessInput {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: solid 2px #333;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.submit {
+    padding: 12px 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #006340;
+    transition: 0.4s;
+}
+
+.submit:hover {
+    background-color: #006340;
+    color: white;
+}
+
+.reload {
+    padding: 12px 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #da8f27;
+    transition: 0.4s;
+}
+
+.reload:hover {
+    background-color: #da8f27;
+    color: white;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#score {
+    margin-top: 20px;
+    color: var(--accent-green);
+}

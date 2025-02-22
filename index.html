@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Guessr</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <div class="game-container">
+        <div class="logo-holder">
+            <img class="logo" src="pguessr.svg">
+        </div>
+        <p>API limits to 100 requests per day</p>
+        <p>Do not hit reload after wrong guess</p>
+        <br>
+        <div class="checkbox-group">
+            <label class="switch-label">
+                <input type="checkbox" id="africaCheckbox" checked>
+                Africa
+            </label>
+            <label class="switch-label">
+                <input type="checkbox" id="asiaCheckbox">
+                Asia
+            </label>
+            <label class="switch-label">
+                <input type="checkbox" id="europeCheckbox">
+                Europe
+            </label>
+        </div>
+
+        <img id="personImage" src="" alt="Person Image">
+        
+        <input type="text" id="guessInput" placeholder="Enter country">
+        
+        <div class="button-group">
+            <button onclick="checkGuess()" class="submit">Submit Guess</button>
+            <button onclick="newGame()" class="reload">Reload</button>
+        </div>
+
+        <p id="result"></p>
+        <p>Current score: <span id="score">0</span></p>
+    </div>
+</body>
+</html>
